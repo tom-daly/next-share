@@ -10,8 +10,7 @@ function blueskyLink(
   return (
     'https://bsky.app/intent/compose' +
     transformObjectToParams({
-      url,
-      text: title
+      text: `${title} ${url}`,
     })
   );
 }
